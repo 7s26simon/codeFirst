@@ -1,0 +1,61 @@
+<!-- DOM is an API for manipulating HTML and XML
+// DOM is a heiracrhyical tree to organise documents
+/* 
+
+
+
+
+-->
+
+<html>
+
+        <body>
+
+            <h1 id="title">Welcome to my page</h1>
+            
+            <h2>This is the first tag</h2>
+            
+            <h2>This is the second tag</h2>
+             
+            
+            <script>
+
+                    // mess with specific title element 
+                    var var1 = document.getElementById("title");
+
+                    //alert("this is a break");
+                
+                    var1.innerHTML = "XSS for Pentesterssss";
+                
+                
+                
+                // mess with ALL h2 tags using .getElementsByTagName
+                    var h2tags = document.getElementsByTagName("h2");
+                
+                    //alert(h2tags.length);
+                
+                    h2tags[1].innerHTML = "This is the 3rd tag, or is it?! ;-)";
+                
+                    alert(h2tags[0].innerHTML);
+                    alert(h2tags[1].innerHTML);
+            
+                
+//                    for(i=0; i < h2tags.length; i++)
+//                        {
+//                            
+//                            alert(h2tags[i].innerHTML);
+//                            
+//                        }
+                
+                
+                    
+                
+                
+            </script>    
+
+
+
+        </body>
+
+
+</html>
